@@ -10,4 +10,14 @@ describe 'User visits trails index' do
     expect(page).to have_content(trip_one.name)
     expect(page).to have_content(trip_two.name)
   end
+  it 'can view an individual trip' do
+    trip_one = Trip.create(name: 'GOGOT')
+
+    visit trips_path
+
+    click_link "#{trip_one.name}"
+
+    expect(current_path).to eq(trip_path(trip_one))
+    expect(page).to have_content(trip_one.name)
+  end
 end
