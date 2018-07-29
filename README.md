@@ -15,7 +15,7 @@ The intention of this application if for users to coordinate which trails they w
 - You will not need to implement authentication/authorization functionality.
 - You will be expected to present full test coverage for everything you build.
   - you are ONLY excused from writing validation/relationship tests at the model level
-
+ 
 
 ### Hiking Trip Index page
 ```
