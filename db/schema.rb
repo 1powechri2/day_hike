@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20180729000726) do
   end
 
   create_table "trip_trails", force: :cascade do |t|
-    t.bigint "trip_id"
     t.bigint "trail_id"
+    t.bigint "trip_id"
     t.index ["trail_id"], name: "index_trip_trails_on_trail_id"
     t.index ["trip_id"], name: "index_trip_trails_on_trip_id"
   end
